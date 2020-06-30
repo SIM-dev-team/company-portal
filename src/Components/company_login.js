@@ -74,12 +74,8 @@ class Register extends Component {
             <div className="ResetPassword">
               <a href="# ">Forget passowrd</a>
             </div>
-            {/* <div className='info'>
-              <small>Password must be eight characters in length.</small>
-            </div> */}
-            <div className='submit'>
-              <button>Login</button>{ }<button>Register</button>
-            </div>
+              <button type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
+              <button type="button" >Register</button>
           </form>
         </div>
       </div>
