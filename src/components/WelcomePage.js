@@ -37,7 +37,6 @@ export const WelcomePage = () => (
         </div>
         <div className="col-lg-6 ">
           <img className="ucsc_logo" src={logo}></img>
-          <p>has fixed width,must change that</p>
         </div>
       </div>
       <div className="row login_btn">
