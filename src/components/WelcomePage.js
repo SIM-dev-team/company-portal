@@ -1,13 +1,9 @@
-import React from "react";
-import { Header } from "../components/Header";
-import "../css/mycustom.css";
-import logo from "../images/ucsc_logo.jpeg";
+import React from 'react'
+import '../css/mycustom.css'
+import logo from '../images/ucsc_logo.jpeg'
 
 export const WelcomePage = () => (
   <div>
-    <div>
-      <Header></Header>
-    </div>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 jumbotron">
@@ -46,4 +42,4 @@ export const WelcomePage = () => (
       </div>
     </div>
   </div>
-);
+)
