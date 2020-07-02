@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css';
+import './company_login.css';
 
 
 const validEmailRegex = RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i);
