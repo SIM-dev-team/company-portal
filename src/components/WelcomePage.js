@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components/Header";
+import { Header } from "../Components/Header";
 import "../css/mycustom.css";
 import logo from "../images/ucsc_logo.jpeg";
 
