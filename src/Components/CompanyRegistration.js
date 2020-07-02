@@ -198,19 +198,20 @@ class CompanyRegistration extends Component {
               <input type='text' name='partners' onChange={this.handleChange}  />
               
             </div>
-            <div className='email'>
+            <div className ="form-row">
+            <div className='email col-6'>
               <label htmlFor="email">Email</label>
               <input required type='email' name='email' onChange={this.handleChange}  />
               {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
             </div>
-            <div className='contact'>
+            <div className='contact col-6'>
               <label htmlFor="contact">Contact</label>
               <input type='telephone' name='contact' onChange={this.handleChange}  />
               {errors.contact.length > 0 && 
                 <span className='error'>{errors.contact}</span>}
             </div>
-
+            </div>
             <div className="form-row">
             <div className='employee form-group col-4'>
               <label htmlFor="employee">Number of Employees</label>
@@ -249,32 +250,32 @@ class CompanyRegistration extends Component {
               {errors.available.length > 0 && 
                 <span className='error'>{errors.available}</span>}
             </div>
-
-            <div className='password'>
+            
+            <div className="form-row">
+            <div className='password form-group col-6'>
               <label htmlFor="password">Password</label>
               <input required type='password' name='password' onChange={this.handleChange}  />
               {errors.password.length > 0 && 
                 <span className='error'>{errors.password}</span>}
             </div>
-            <div className='confirm'>
+            <div className='confirm form-group col-6'>
               <label htmlFor="confirm">Confirm Password</label>
               <input required type='password' name='confirm' onChange={this.handleChange}  />
               {errors.confirm.length > 0 && 
                 <span className='error'>{errors.confirm}</span>}
             </div>
+            </div>
             {/* <div className='info'>
               <small>Password must be eight characters in length.</small>
             </div> */}
-            <div className="bttn row">
-            <div className="cancel col-6">
+            <div className="bttn form-row">
+            <div className="cancel form-group col-4">
             <button className="cancelbttn btn btn-danger" onClick={this.cancelCourse}>Cancel</button>
             </div>
-            <div className='submit col-6'>
+            <div className='submit form-group col-4'>
               <button type="submit" className="registerbttn btn btn-primary" >Submit</button>
             </div>
-            </div>
-            
-            <p className="form-status">Form is {formValid ? 'valid ✅' : 'invalid ❌'}</p> 
+            </div> 
         
           </form>
           
