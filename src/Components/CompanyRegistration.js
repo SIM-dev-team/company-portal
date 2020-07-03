@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-//import { render } from 'react-dom';
-//import './style.css';
 import '../css/CompanyRegistration.css'
-import axios from 'axios'
+import { withRouter } from 'react-router-dom'
 
+// eslint-disable-next-line
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
 )
@@ -50,7 +49,9 @@ class CompanyRegistration extends Component {
 
     switch (name) {
       case 'fullName':
-        errors.fullName = value == '' ? 'Company name is Required!' : ''
+        errors.fullName =
+          // eslint-disable-next-line
+          value == '' ? 'Company name is Required!' : ''
         break
       case 'email':
         errors.email = validEmailRegex.test(value) ? '' : 'Email is not valid!'
@@ -61,10 +62,12 @@ class CompanyRegistration extends Component {
         break
       case 'description':
         errors.description =
+          // eslint-disable-next-line
           value == '' ? 'Company description is Required!' : ''
         break
       case 'regNo':
         errors.regNo =
+          // eslint-disable-next-line
           value == '' ? 'Company registration number is Required!' : ''
         break
       case 'contact':
@@ -72,26 +75,33 @@ class CompanyRegistration extends Component {
           value.length < 10 ? 'Valid Contact number is Required!' : ''
         break
       case 'address':
-        errors.address = value == '' ? 'Current Address is Required!' : ''
+        errors.address =
+          // eslint-disable-next-line
+          value == '' ? 'Current Address is Required!' : ''
         break
       case 'date':
         errors.date =
+          // eslint-disable-next-line
           value == '' ? 'Date of Company Establishment is Required!' : ''
         break
       case 'employee':
         errors.employee =
+          // eslint-disable-next-line
           value == '' ? 'Current Number of Employees is Required!' : ''
         break
       case 'pm':
         errors.pm =
+          // eslint-disable-next-line
           value == '' ? 'Current Number of Project Managers is Required!' : ''
         break
       case 'techlead':
         errors.techlead =
+          // eslint-disable-next-line
           value == '' ? 'Current Number of Tech Leads is Required!' : ''
         break
       case 'confirm':
         errors.confirm =
+          // eslint-disable-next-line
           value != this.state.password ? 'Password do not match!' : ''
         break
 
@@ -108,15 +118,17 @@ class CompanyRegistration extends Component {
     this.setState({ errorCount: countErrors(this.state.errors) })
   }
 
-  cancelCourse = () => {
+  cancelCourse = (e) => {
+    e.preventDefault()
     document.getElementById('reg').reset()
+    this.props.history.push('/login')
   }
 
   render() {
     const { errors, formValid } = this.state
     return (
       <div className="wrapper">
-        <div className="form-wrapper">
+        <div className="form-wrapper01">
           <h2>Register Your Company</h2>
           <form id="reg" onSubmit={this.handleSubmit}>
             <div className="fullName">
@@ -262,7 +274,7 @@ class CompanyRegistration extends Component {
                 industry placement for any other universities/educational
                 institutes before.
               </label>
-              <label class="form-check form-check-inline">
+              <label className="form-check form-check-inline">
                 <input
                   required
                   className="form-check-input"
@@ -271,9 +283,9 @@ class CompanyRegistration extends Component {
                   value="yes"
                   onChange={this.handleChange}
                 />
-                <span class="form-check-label"> Yes</span>
+                <span className="form-check-label"> Yes</span>
               </label>
-              <label class="form-check form-check-inline">
+              <label className="form-check form-check-inline">
                 <input
                   required
                   className="form-check-input"
@@ -282,7 +294,7 @@ class CompanyRegistration extends Component {
                   value="no"
                   onChange={this.handleChange}
                 />
-                <span class="form-check-label"> No</span>
+                <span className="form-check-label"> No</span>
               </label>
               {errors.available.length > 0 && (
                 <span className="error">{errors.available}</span>
@@ -313,9 +325,6 @@ class CompanyRegistration extends Component {
                 <span className="error">{errors.confirm}</span>
               )}
             </div>
-            {/* <div className='info'>
-              <small>Password must be eight characters in length.</small>
-            </div> */}
             <div className="bttn row">
               <div className="cancel col-6">
                 <button
@@ -331,8 +340,14 @@ class CompanyRegistration extends Component {
                 </button>
               </div>
             </div>
+            <div className="submit col-6">
+              <button type="submit" className="registerbttn btn btn-primary">
+                Submit
+              </button>
+            </div>
 
             <p className="form-status">
+              <br />
               Form is {formValid ? 'valid ✅' : 'invalid ❌'}
             </p>
           </form>
@@ -342,4 +357,4 @@ class CompanyRegistration extends Component {
   }
 }
 
-export default CompanyRegistration
+export default withRouter(CompanyRegistration)

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import NavBar from './Components/NavBar'
@@ -6,11 +7,15 @@ import CompanyLogin from './Components/CompanyLogin'
 import Companyprofile from './Components/CompanyProfile'
 import Header from './Components/Header'
 
+
+
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+
+      <Header />
         {/* <NavBar /> */}
         <Companyprofile />
         {/* <CompanyLogin /> */}
@@ -18,6 +23,10 @@ class App extends Component {
       </div>
     )
   }
+
+  
+
+
 }
 
 export default App
