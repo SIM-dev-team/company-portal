@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-import company_logo from '../images/company_logo.png'
+
+
 import '../css/mycustom.css'
 import EdiText from 'react-editext'
 import { withRouter } from 'react-router-dom';
+import company_ex from '../images/company_logo_ex.jpg'
+import { Image } from 'react-bootstrap'
 
 class Companyprofile extends Component {
 
@@ -25,7 +28,12 @@ class Companyprofile extends Component {
       <div className="container-fluid">
     <div className="row">
       <div className="col-lg-3">
-        <img className="company_logo" src={company_logo} alt="Avatar"></img>
+       <Image
+                className="company_logo"
+                src={company_ex}
+                roundedCircle
+                alt="Avatar"
+              ></Image>
       </div>
       <div className="col-lg-8 mt-xl-3  ">
         <div className="company_name_align">
@@ -33,23 +41,7 @@ class Companyprofile extends Component {
         </div>
         <div className="jumbotron">
         
-        <div className="container">
-          <EdiText
-              type='textarea'
-              inputProps={{
-                className: 'textarea',
-                placeholder: 'Type your content here',
-                style: {
-                  outline: 'none',
-                  minWidth: '80%'
-                },
-                rows: 5
-                }}
-              value="How do you define real? If you're talking about what you can feel, what you can smell,
-              what you can taste and see, then real is simply electrical signals interpreted by your brain"
-              onSave={this.onSave}
-            />
-        </div>
+        
 
           <a href="www.softwarecompany.com" className="link_align">
             www.softwarecompany.com
@@ -95,8 +87,11 @@ class Companyprofile extends Component {
 
   </div>
 
+
     )
   }
 }
 
+
 export default withRouter(Companyprofile);
+
