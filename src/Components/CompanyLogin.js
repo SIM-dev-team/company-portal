@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './company_login.css';
+import '../css/CompanyLogin.css';
+import { Route, BrowserRouter, useHistory } from 'react-router-dom';
+import CompanyRegistration from './CompanyRegistration';
 
 
 const validEmailRegex = RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i);
@@ -11,7 +13,9 @@ const validateForm = (errors) => {
   return valid;
 }
 
+
 class Register extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -51,6 +55,7 @@ class Register extends Component {
       console.error('Invalid Form')
     }
   }
+  
 
   render() {
     const {errors} = this.state;
@@ -77,6 +82,9 @@ class Register extends Component {
               <button type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
               <button type="button" >Register</button>
           </form>
+        </div>
+        <div>
+          <Route exact path = '/register' component= {CompanyRegistration} />
         </div>
       </div>
     );
