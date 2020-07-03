@@ -1,14 +1,24 @@
 
-import React from 'react'
+import React, { Component } from 'react'
 import '../css/mycustom.css'
 import logo from '../images/ucsc_logo.jpeg'
+import { withRouter } from 'react-router-dom';
 
-export const WelcomePage = () => (
-  <div>
-    <div className="container">
+class  WelcomePage extends Component {
+
+  gologin = (x) => {
+    x.preventDefault();
+    this.props.history.push('/login');
+    
+  }
+
+  render(){
+    return(
+      <div>
+    <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-6 jumbotron">
-          <p>
+        <div className=" col-lg-6 jumbotron">
+          <p className="parag">
             <strong>
               The University of Colombo School of Computing (UCSC)
             </strong>
@@ -33,15 +43,17 @@ export const WelcomePage = () => (
           </p>
         </div>
         <div className="col-lg-6 ">
-          <img className="ucsc_logo" src={logo}></img>
+          <img className="ucsc_logo" alt="" src={logo}></img>
         </div>
       </div>
       <div className="row login_btn">
-        <button type="button" className="btn btn-primary btn-lg">
+        <button onClick={this.gologin} type="button" className="btn btn-primary btn-lg">
           Login
         </button>
       </div>
     </div>
   </div>
-)
-export default WelcomePage;
+    );
+  }
+}
+export default withRouter(WelcomePage);

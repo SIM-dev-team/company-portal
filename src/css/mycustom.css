@@ -1,12 +1,15 @@
-.Header {
+/* .Header {
   box-sizing: border-box;
   width: 100%;
   display: inline-flex;
   justify-content: flex-start;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 111em;
+  margin-bottom: 12em;
   background-color: rgb(24, 16, 102);
   color: #fff;
+} */
+.container-fluid{
+  margin-top: 1em;
 }
 
 .ucsc_logo {
@@ -15,17 +18,18 @@
   height: 400px;
 }
 .login_btn {
+  margin-top: 10em;
   padding: 1em 3em;
 }
 .edit-btn {
   background-color: #09a9e8;
-  border-radius: 20px;
+  border-radius: 5px;
   border-style: none;
-
   color: #fff;
-  width: 120px;
-  height: 28px;
-  outline: 0;
+  width: 80px;
+  height: 40px;
+  border: none;
+  outline: none;
 }
 .company_name_align {
   margin: 1em;
@@ -40,11 +44,11 @@
   float: right;
 }
 .advert-btn {
-  background-color: #112163;
+  background-color: #09a9e8;
   border-radius: 5px;
   border-style: none;
   color: #fff;
-  width: 30px;
+  width: 200px;
   height: 40px;
   border: none;
   outline: none;
@@ -55,17 +59,18 @@
   border-radius: 5px;
   border-style: none;
   color: #fff;
-  width: 30px;
+  width: 200px;
   height: 40px;
   outline: none;
 }
 .new_ad-btn {
   background-color: #09a9e8;
-  border-radius: 20px;
+  border-radius: 5px;
   border-style: none;
   color: #fff;
-  width: 35px;
-  height: 28px;
+  width: 200px;
+  height: 40px;
+  border: none;
   outline: none;
 }
 .link_align {

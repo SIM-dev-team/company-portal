@@ -4,19 +4,22 @@ import '../css/mycustom.css'
 import EdiText from 'react-editext'
 import { withRouter } from 'react-router-dom';
 
-class Companyprofile extends Component {
+
+class CompnayNotification extends Component {
 
   onSave = val => {
     console.log('Edited Value -> ', val)
   }
-  goNotification = (e)=>{
+  goProfile = (e)=>{
     e.preventDefault();
-    this.props.history.push('/notification');
+    this.props.history.push('/profile');
   }
   goNewAdd = (v)=> {
     v.preventDefault();
     this.props.history.push('/newadd')
   }
+
+
 
 
   render(){
@@ -60,7 +63,6 @@ class Companyprofile extends Component {
     <div className="row">
       <div className="col-2">
         <button
-          onClick={this.goNotification}
           type="button"
           className="notification-btn btn-block"
           style={{ outlineColor: '#1b85a6' }}
@@ -70,6 +72,7 @@ class Companyprofile extends Component {
       </div>
       <div className="col-2">
         <button
+        onClick={this.goProfile}
           type="button"
           className=" advert-btn btn-block "
           style={{ outline: 'none' }}
@@ -88,15 +91,14 @@ class Companyprofile extends Component {
     <div className="row-cols-xl mt-5">
       <div className=" jumbotron">
         <div className="container">
-          <h5>Posted Ads goes here as cards</h5>
+          <h5>Notifications are here</h5>
         </div>
       </div>
     </div>
-
   </div>
 
     )
   }
 }
 
-export default withRouter(Companyprofile);
+export default withRouter(CompnayNotification);
