@@ -1,15 +1,14 @@
-
 .Header_ucsc {
   box-sizing: border-box;
   width: 100%;
   display: inline-flex;
   justify-content: flex-start;
-  padding: 111em;
-  margin-bottom: 12em;
+  padding: 1em;
+  margin-bottom: 2em;
   background-color: rgb(24, 16, 102);
   color: #fff;
-} 
-.container-fluid{
+}
+.container-fluid {
   margin-top: 1em;
 }
 
@@ -44,7 +43,7 @@
   float: right;
 }
 .advert-btn {
-  background-color: #09a9e8;
+  background-color: rgb(17, 9, 92);
   border-radius: 5px;
   border-style: none;
   color: #fff;
@@ -87,4 +86,38 @@
   max-width: 200px;
   max-height: 200px;
   vertical-align: bottom;
+}
+.verifyMail_header {
+  text-align: start;
+  text-decoration: double;
+  font-family: Lato;
+  font-size: 35px;
+  margin-top: 2em;
+}
+.img_size_verifymail {
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: 300px;
+}
+.jumbotron.text-center {
+  height: fit-content;
+  max-width: 80em;
+}
+.verify-btn {
+  background-color: rgb(17, 9, 92);
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-left: 26em;
+}
+.center_input_box {
+  margin-left: 12em;
+}
+.center_input_label {
+  font-size: 20px;
+  margin-left: 19em;
 }
