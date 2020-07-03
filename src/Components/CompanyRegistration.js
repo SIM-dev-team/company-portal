@@ -340,11 +340,6 @@ class CompanyRegistration extends Component {
                 </button>
               </div>
             </div>
-            <div className="submit col-6">
-              <button type="submit" className="registerbttn btn btn-primary">
-                Submit
-              </button>
-            </div>
 
             <p className="form-status">
               <br />
