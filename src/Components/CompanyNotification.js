@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
-
-
+import company_logo from '../images/company_logo.png'
 import '../css/mycustom.css'
 import EdiText from 'react-editext'
 import { withRouter } from 'react-router-dom';
-import company_ex from '../images/company_logo_ex.jpg'
-import { Image } from 'react-bootstrap'
 
-class Companyprofile extends Component {
+
+class CompnayNotification extends Component {
 
   onSave = val => {
     console.log('Edited Value -> ', val)
   }
-  goNotification = (e)=>{
+  goProfile = (e)=>{
     e.preventDefault();
-    this.props.history.push('/notification');
+    this.props.history.push('/profile');
   }
   goNewAdd = (v)=> {
     v.preventDefault();
     this.props.history.push('/newadd')
   }
+
+
 
 
   render(){
@@ -28,12 +28,7 @@ class Companyprofile extends Component {
       <div className="container-fluid">
     <div className="row">
       <div className="col-lg-3">
-       <Image
-                className="company_logo"
-                src={company_ex}
-                roundedCircle
-                alt="Avatar"
-              ></Image>
+        <img className="company_logo" src={company_logo} alt="Avatar"></img>
       </div>
       <div className="col-lg-8 mt-xl-3  ">
         <div className="company_name_align">
@@ -41,7 +36,23 @@ class Companyprofile extends Component {
         </div>
         <div className="jumbotron">
         
-        
+        <div className="container">
+          <EdiText
+              type='textarea'
+              inputProps={{
+                className: 'textarea',
+                placeholder: 'Type your content here',
+                style: {
+                  outline: 'none',
+                  minWidth: '80%'
+                },
+                rows: 5
+                }}
+              value="How do you define real? If you're talking about what you can feel, what you can smell,
+              what you can taste and see, then real is simply electrical signals interpreted by your brain"
+              onSave={this.onSave}
+            />
+        </div>
 
           <a href="www.softwarecompany.com" className="link_align">
             www.softwarecompany.com
@@ -52,7 +63,6 @@ class Companyprofile extends Component {
     <div className="row">
       <div className="col-2">
         <button
-          onClick={this.goNotification}
           type="button"
           className="notification-btn btn-block"
           style={{ outlineColor: '#1b85a6' }}
@@ -62,6 +72,7 @@ class Companyprofile extends Component {
       </div>
       <div className="col-2">
         <button
+        onClick={this.goProfile}
           type="button"
           className=" advert-btn btn-block "
           style={{ outline: 'none' }}
@@ -80,18 +91,14 @@ class Companyprofile extends Component {
     <div className="row-cols-xl mt-5">
       <div className=" jumbotron">
         <div className="container">
-          <h5>Posted Ads goes here as cards</h5>
+          <h5>Notifications are here</h5>
         </div>
       </div>
     </div>
-
   </div>
-
 
     )
   }
 }
 
-
-export default withRouter(Companyprofile);
-
+export default withRouter(CompnayNotification);
