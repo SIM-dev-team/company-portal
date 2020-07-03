@@ -65,3 +65,4 @@ export const Companyprofile = () => (
     </div>
   </div>
 )
+export default Companyprofile;

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CompanyRegistration from './CompanyRegistration';
+import CompanyLogin from './CompanyLogin';
+import WelcomePage from './WelcomePage';
+
 
 class NavBar extends Component{
     render(){
@@ -12,7 +16,7 @@ class NavBar extends Component{
                     <div className="collapse navbar-collapse" id="navbarSup"></div>
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link to = {'/'} className="nav-link">Home</Link>
+                            <Link to = {'/home'} className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={'/login'} className="nav-link">Login</Link>
@@ -22,6 +26,11 @@ class NavBar extends Component{
                         </li>
                     </ul>
                 </nav>
+                <Switch>
+                    <Route exact path = '/login' component= {CompanyLogin}/>
+                    <Route exact path = '/register' component= {CompanyRegistration}/>
+                    <Route exact path = '/home' component= {WelcomePage}/>
+                </Switch>
             </div>
         </Router>
         );
