@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/CompanyLogin.css';
-import { Route, BrowserRouter, useHistory } from 'react-router-dom';
-import CompanyRegistration from './CompanyRegistration';
+import { withRouter } from 'react-router-dom';
 
 
 const validEmailRegex = RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i);
@@ -13,9 +12,7 @@ const validateForm = (errors) => {
   return valid;
 }
 
-
 class Register extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -50,10 +47,15 @@ class Register extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     if(validateForm( this.state.errors)) {
-      console.info('Valid form')
+      this.props.history.push('/profile');
     }else{
       console.error('Invalid Form')
     }
+  }
+  goRegister = (vari) => {
+    vari.preventDefault();
+    // console.log("Hello");
+    this.props.history.push('/register');
   }
   
 
@@ -80,15 +82,12 @@ class Register extends Component {
               <a href="# ">Forget passowrd</a>
             </div>
               <button type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
-              <button type="button" >Register</button>
+              <button onClick={this.goRegister} type="button" >Register</button>
           </form>
-        </div>
-        <div>
-          <Route exact path = '/register' component= {CompanyRegistration} />
         </div>
       </div>
     );
   }
 }
 
-export default Register;
+export default withRouter(Register);

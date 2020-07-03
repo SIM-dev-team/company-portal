@@ -21,6 +21,7 @@ export const Companyprofile = () => (
         <div className="row-cols-xl  btn-align mt-0">
           <button
             type="button"
+
             className="edit-btn "
             style={({ outline: 'none' }, { outlineColor: '#d5edf5' })}
           >
