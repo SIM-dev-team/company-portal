@@ -1,10 +1,13 @@
-import React from "react";
-import "../css/mycustom.css";
+import React from 'react'
+import '../css/mycustom.css'
 
-export const Header = () => (
-  <div className="Header">
+const Header = () => (
+  <div className="Header_ucsc">
     <header>
-      Professional Development Center of Colombo School of Computing
+      Professional Development Center of University of Colombo School of
+      Computing
     </header>
   </div>
-);
+)
+
+export default Header

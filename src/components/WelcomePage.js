@@ -1,4 +1,3 @@
-
 import React from 'react'
 import '../css/mycustom.css'
 import logo from '../images/ucsc_logo.jpeg'
@@ -33,7 +32,7 @@ export const WelcomePage = () => (
           </p>
         </div>
         <div className="col-lg-6 ">
-          <img className="ucsc_logo" src={logo}></img>
+          <img className="ucsc_logo" src={logo} alt=""></img>
         </div>
       </div>
       <div className="row login_btn">

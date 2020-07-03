@@ -1,4 +1,4 @@
-.Header {
+.Header_ucsc {
   box-sizing: border-box;
   width: 100%;
   display: inline-flex;
@@ -21,7 +21,6 @@
   background-color: #09a9e8;
   border-radius: 20px;
   border-style: none;
-
   color: #fff;
   width: 120px;
   height: 28px;
@@ -36,7 +35,6 @@
   margin-right: 10px;
   margin-top: 0px;
   padding-right: 1px;
-  vertical-align: bottom;
   float: right;
 }
 .advert-btn {
@@ -70,11 +68,16 @@
 }
 .link_align {
   margin: 1em;
-
   float: left;
 }
 .img_size {
   max-width: 100px;
   max-height: 100px;
   float: left;
+}
+.company_logo {
+  display: inline;
+  max-width: 200px;
+  max-height: 200px;
+  vertical-align: bottom;
 }
