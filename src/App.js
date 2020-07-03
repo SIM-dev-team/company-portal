@@ -6,13 +6,15 @@ import CompanyLogin from './Components/CompanyLogin'
 import Companyprofile from './Components/CompanyProfile'
 import Header from './Components/Header'
 import VerifyMail from './Components/verifyMail'
+import NotYetVerified from './Components/notYetVerified'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <VerifyMail />
+        <NotYetVerified />
+        {/* <VerifyMail /> */}
         {/* <NavBar /> */}
         {/* <Companyprofile /> */}
         {/* <CompanyLogin /> */}
