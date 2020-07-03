@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import company_logo from '../images/company_logo.png'
+//import company_logo from '../images/company_logo.png'
 import company_ex from '../images/company_logo_ex.jpg'
 import '../css/mycustom.css'
 import { Image } from 'react-bootstrap'
@@ -22,22 +22,23 @@ class CompanyProfile extends Component {
               <div className="company_name_align">
                 <h4>Software Company Name</h4>
               </div>
-              <div className="jumbotron">
-                <p> Description goes here</p>
-              </div>
+
               <div>
+                <div className="jumbotron">
+                  <p> Description goes here</p>
+                </div>
                 <a href="www.softwarecompany.com" className="link_align">
                   www.softwarecompany.com
                 </a>
-                <div className="row-cols-xl  btn-align mt-2">
-                  <button
-                    type="button"
-                    className="edit-btn "
-                    style={{ outline: 'none' }}
-                  >
-                    Edit
-                  </button>
-                </div>
+              </div>
+              <div className="row-cols-xl  btn-align mt-2">
+                <button
+                  type="button"
+                  className="edit-btn "
+                  style={{ outline: 'none' }}
+                >
+                  Edit
+                </button>
               </div>
             </div>
           </div>

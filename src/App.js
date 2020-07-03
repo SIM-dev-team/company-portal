@@ -4,15 +4,17 @@ import NavBar from './Components/NavBar'
 import CompanyRegistration from './Components/CompanyRegistration'
 import CompanyLogin from './Components/CompanyLogin'
 import Companyprofile from './Components/CompanyProfile'
+import Header from './Components/Header'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        {/* <Companyprofile/> */}
-        <CompanyLogin />
-        {/* <CompanyRegistration/> */}
+        <Header />
+        {/* <NavBar /> */}
+        <Companyprofile />
+        {/* <CompanyLogin /> */}
+        {/* <CompanyRegistration /> */}
       </div>
     )
   }
