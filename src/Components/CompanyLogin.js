@@ -54,7 +54,6 @@ class Register extends Component {
   }
   goRegister = (vari) => {
     vari.preventDefault();
-    // console.log("Hello");
     this.props.history.push('/register');
   }
   

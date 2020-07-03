@@ -5,6 +5,8 @@ import CompanyRegistration from './CompanyRegistration';
 import CompanyLogin from './CompanyLogin';
 import WelcomePage from './WelcomePage';
 import Companyprofile from './CompanyProfile';
+import CompnayNotification from './CompanyNotification';
+import NewAdFrom from './NewAdFrom';
 
 
 class NavBar extends Component{
@@ -31,6 +33,8 @@ class NavBar extends Component{
                     <Route exact path = '/register' component= {CompanyRegistration}/>
                     <Route exact path = '/' component= {WelcomePage}/>
                     <Route exact path = '/profile' component= {Companyprofile}/>
+                    <Route exact path = '/notification' component= {CompnayNotification}/>
+                    <Route exact path = '/newadd' component = {NewAdFrom}/>
                 </Switch>
         </Router>
         );
