@@ -17,7 +17,7 @@ class VerifyMail extends Component {
         <div className="container ">
           <div>
             <Card className="jumbotron text-center">
-              <div className="row">
+              {/* <div className="row">
                 <Image
                   src={this.state.Imgsrc}
                   roundedCircle
@@ -28,7 +28,7 @@ class VerifyMail extends Component {
                     Hello," {this.state.Comp_name} "
                   </h4>
                 </div>
-              </div>
+              </div> */}
 
               <Card.Text className="mt-4" style={{ fontSize: 18 }}>
                 To Complete the your registration ,please verify your email
@@ -36,11 +36,11 @@ class VerifyMail extends Component {
               <Form>
                 <Form.Group controlId="VerifyKey" className="ml-5">
                   <Form.Label className="text-center center_input_label">
-                    Enter Verify Key
+                    Enter Verification Key
                   </Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Verify Key"
+                    placeholder="Verification Key"
                     className="text-center  center_input_box"
                   ></Form.Control>
                 </Form.Group>
