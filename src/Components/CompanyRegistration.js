@@ -116,6 +116,7 @@ class CompanyRegistration extends Component {
     event.preventDefault()
     this.setState({ formValid: validateForm(this.state.errors) })
     this.setState({ errorCount: countErrors(this.state.errors) })
+    this.props.history.push('/email-verify');
   }
 
   cancelCourse = (e) => {

@@ -33,7 +33,7 @@ p, div {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 0.25em;
-    color: rgb(226, 238, 61);
+    color: rgb(0, 0, 0);
     margin-bottom: 30px;
   }
   
@@ -49,9 +49,9 @@ p, div {
     padding-right: 0.5em;
   }
   
-  label {
+  .label {
     margin-bottom: 0.5em;
-    color: #444;
+    color:#000000;
     font-weight: lighter;
   }
   
@@ -118,6 +118,11 @@ p, div {
     font-weight: bold;
     font-style: italic;
   }
+  /* .fullName,.description, .regNo, .partners, .clients, .contact, .available,.website,.address,.date,.employee,.pm,.techlead,.confirm,
+  .email,
+  .password > label{
+    color: #e90f0f;
+  } */
   
  .form-row{
     width: 100%;

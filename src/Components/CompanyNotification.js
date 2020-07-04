@@ -27,6 +27,7 @@ class CompnayNotification extends Component {
 
       <div className="container-fluid">
     <div className="row">
+            <button className="backbtn" onClick={this.props.history.goBack}>Back</button>
       <div className="col-lg-3">
         <img className="company_logo" src={company_logo} alt="Avatar"></img>
       </div>

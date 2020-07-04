@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import '../css/mycustom.css'
 import EdiText from 'react-editext'
 import { withRouter } from 'react-router-dom'
@@ -20,9 +19,11 @@ class Companyprofile extends Component {
   }
 
   render() {
+
     return (
       <div className="container-fluid">
         <div className="row">
+            <button className="backbtn" onClick={this.props.history.goBack}>Back</button>
           <div className="col-lg-3">
             <Image
               className="company_logo"
@@ -36,6 +37,23 @@ class Companyprofile extends Component {
               <h4>Software Company Name</h4>
             </div>
             <div className="jumbotron">
+            <div className="container">
+          <EdiText
+              type='textarea'
+              inputProps={{
+                className: 'textarea',
+                placeholder: 'Type your content here',
+                style: {
+                  outline: 'none',
+                  minWidth: '80%'
+                },
+                rows: 5
+                }}
+              value="How do you define real? If you're talking about what you can feel, what you can smell,
+              what you can taste and see, then real is simply electrical signals interpreted by your brain"
+              onSave={this.onSave}
+            />
+        </div>
               <a href="www.softwarecompany.com" className="link_align">
                 www.softwarecompany.com
               </a>
