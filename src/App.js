@@ -7,18 +7,21 @@ import Companyprofile from './Components/CompanyProfile'
 import Header from './Components/Header'
 import VerifyMail from './Components/verifyMail'
 import NotYetVerified from './Components/notYetVerified'
+import WelcomePage from './Components/WelcomePage'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <NotYetVerified />
-        {/* <VerifyMail /> */}
+        {/* <WelcomePage /> */}
+
         {/* <NavBar /> */}
-        {/* <Companyprofile /> */}
-        {/* <CompanyLogin /> */}
         {/* <CompanyRegistration /> */}
+        {/* <CompanyLogin /> */}
+        {/* <NotYetVerified /> */}
+        {/* <VerifyMail /> */}
+        <Companyprofile />
       </div>
     )
   }
