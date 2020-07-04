@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import '../css/CompanyRegistration.css'
 import { withRouter } from 'react-router-dom'
 
-// eslint-disable-next-line
 const validEmailRegex = RegExp(
+  // eslint-disable-next-line
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
 )
 const validateForm = (errors) => {

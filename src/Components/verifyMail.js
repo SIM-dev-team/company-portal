@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
-import { Card, Image, Form } from 'react-bootstrap'
-import company_logo_ex from '../images/company_logo_ex.jpg'
-import { withRouter } from 'react-router-dom';
+import { Card, Form } from 'react-bootstrap'
+
+import { withRouter } from 'react-router-dom'
 
 class VerifyMail extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      Comp_name: 'Company',
-      Imgsrc: company_logo_ex,
-    }
+    this.state = {}
   }
 
-  checkCode=(x) => {
-    x.preventDefault();
+  checkCode = (x) => {
+    x.preventDefault()
     // if(check correct code ? true){}
-    this.props.history.push('/login');
-    // update database confirm code  <--------- 
+    this.props.history.push('/login')
+    // update database confirm code  <---------
 
     // else{}
     // alert('Invalid code') <--- if qury wrong
@@ -29,19 +26,6 @@ class VerifyMail extends Component {
         <div className="container ">
           <div>
             <Card className="jumbotron text-center">
-              {/* <div className="row">
-                <Image
-                  src={this.state.Imgsrc}
-                  roundedCircle
-                  className="img_size_verifymail"
-                ></Image>
-                <div className="col">
-                  <h4 className="verifyMail_header">
-                    Hello," {this.state.Comp_name} "
-                  </h4>
-                </div>
-              </div> */}
-
               <Card.Text className="mt-4" style={{ fontSize: 18 }}>
                 To Complete the your registration ,please verify your email
               </Card.Text>
@@ -57,7 +41,11 @@ class VerifyMail extends Component {
                   ></Form.Control>
                 </Form.Group>
               </Form>
-              <button onClick={this.checkCode} className="verify-btn block " type="submit">
+              <button
+                onClick={this.checkCode}
+                className="verify-btn block "
+                type="submit"
+              >
                 Verify
               </button>
             </Card>
@@ -68,4 +56,4 @@ class VerifyMail extends Component {
   }
 }
 
-export default withRouter(VerifyMail);
+export default withRouter(VerifyMail)
