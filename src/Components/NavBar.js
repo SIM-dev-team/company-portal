@@ -7,24 +7,26 @@ import WelcomePage from './WelcomePage';
 import Companyprofile from './CompanyProfile';
 import CompnayNotification from './CompanyNotification';
 import NewAdFrom from './NewAdFrom';
-
+import VerifyMail from './verifyMail';
+import NotYetVerified from './notYetVerified'
 
 class NavBar extends Component{
     render(){
         return (
         <Router>
-                <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#192a56'}}>
-                    <Link to={'/'} className="navbar-brand">UCSC PDC</Link>
+                <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#341f97'}}>
+                    <Link to={'/'} className="navbar-brand" style={{color:'#c8d6e5'}}>Professional Development Center of University of Colombo School of
+      Computing</Link>
                     <div className="collapse navbar-collapse" id="navbarSup"></div>
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link to = {'/'} className="nav-link">Home</Link>
+                            <Link to = {'/'} className="nav-link" style={{color:'#c8d6e5'}}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/login'} className="nav-link">Login</Link>
+                            <Link to={'/login'} className="nav-link" style={{color:'#c8d6e5'}}>Login</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/register'} className="nav-link">Register</Link>
+                            <Link to={'/register'} className="nav-link" style={{color:'#c8d6e5'}}>Register</Link>
                         </li>
                     </ul>
                 </nav>
@@ -35,6 +37,8 @@ class NavBar extends Component{
                     <Route exact path = '/profile' component= {Companyprofile}/>
                     <Route exact path = '/notification' component= {CompnayNotification}/>
                     <Route exact path = '/newadd' component = {NewAdFrom}/>
+                    <Route exact path = '/email-verify' component = {VerifyMail}/>
+                    <Route exact path = '/email-notyet-verified' component = {NotYetVerified}/>
                 </Switch>
         </Router>
         );

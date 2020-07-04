@@ -17,6 +17,16 @@
 .container-fluid {
   margin-top: 1em;
 }
+.backbtn{
+  justify-content: flex-start;
+  color:#ffffff;
+  border-radius: 0.8em;
+  width: 5em;
+  height:2em;
+  margin-left: 1em;
+  border: none;
+  background-color: #0984e3;
+}
 
 .ucsc_logo {
   border: none;

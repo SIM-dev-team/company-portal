@@ -13,12 +13,20 @@ class App extends Component {
   render() {
     return (
       <div>
+
         <Header />
         {/* <WelcomePage /> */}
 
         {/* <NavBar /> */}
-        {/* <CompanyRegistration /> */}
+       
+        {/* <Header /> */}
+       
+       
+        {/* <Companyprofile /> */}
         {/* <CompanyLogin /> */}
+
+        {/* <CompanyRegistration /> */}
+       
         {/* <NotYetVerified /> */}
         {/* <VerifyMail /> */}
         <Companyprofile />

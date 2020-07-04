@@ -5,6 +5,8 @@ import '../css/CompanyLogin.css';
 import { withRouter } from 'react-router-dom';
 
 
+
+
 const validEmailRegex = RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i)
 const validateForm = (errors) => {
   let valid = true
@@ -46,11 +48,14 @@ class Register extends Component {
   }
 
   handleSubmit = (event) => {
-
-
     event.preventDefault();
     if(validateForm( this.state.errors)) {
-      this.props.history.push('/profile');
+        // if(check query database udate email confired or not){} 
+        this.props.history.push('/profile');
+
+        // else{ 
+        //   this.props.history.push('/email-notyet-verified')
+        // }
     }else{
       console.error('Invalid Form')
     }
@@ -82,22 +87,16 @@ class Register extends Component {
             </div>
             <div className="password">
               <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                name="password"
-                onChange={this.handleChange}
-                noValidate
-              />
-              {errors.password.length > 0 && (
-                <span className="error">{errors.password}</span>
-              )}
+              <input type='password' name='password' onChange={this.handleChange} noValidate />
+              {errors.password.length > 0 && 
+                <span className='error'>{errors.password}</span>}
             </div>
             <div className="ResetPassword">
-              <a href="# ">Forget passowrd</a>
+              <a href="# " className="ResetPassword">Forget passowrd</a><br/>
             </div>
-
-              <button type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
-              <button onClick={this.goRegister} type="button" >Register</button>
+              <button className="btn1" type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
+                <p className="or">----------------------OR----------------------</p>
+                <button className="btn2" onClick={this.goRegister} type="button" >Register</button>
           </form>
         </div>
 

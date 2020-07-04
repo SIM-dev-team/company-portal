@@ -2,6 +2,10 @@ p,
 div {
   font-family: Lato;
 }
+.or{
+  padding-top: 0.7em;
+  color: #8b8384;
+}
 
 .wrapper {
   height: 90vh;
@@ -23,7 +27,7 @@ div {
   padding: 20px 40px;
   border-radius: 6px;
   box-shadow: 0px 8px 36px #222;
-  background-color: #fefefe;
+  background-color: #5b5ebe;
 }
 
 .form-wrapper > h2 {
@@ -50,7 +54,7 @@ form {
 
 label {
   margin-bottom: 0.5em;
-  color: #444;
+  color: rgb(0, 0, 0);
   font-weight: lighter;
 }
 
@@ -67,14 +71,23 @@ input::placeholder {
   color: #bbb;
 }
 
-button {
-  height: 100%;
-  width: 100%;
+.btn1 {
+  width: 17em;
   cursor: pointer;
   padding: 0.538em;
   border: none;
-  border-radius: 2px;
-  border-style: solid;
+  /* border-radius: 2px; */
+  /* border-style: solid; */
+  background-color: #007bff;
+  color: #fefefe;
+}
+.btn2 {
+  width: 17em;
+  cursor: pointer;
+  padding: 0.538em;
+  border: none;
+  /* border-radius: 2px; */
+  /* border-style: solid; */
   background-color: #007bff;
   color: #fefefe;
 }
@@ -111,7 +124,7 @@ input.error {
 }
 
 .ResetPassword {
-  color: grey;
+  color: rgb(0, 0, 0);
   font-size: 0.9em;
-  margin-left: 150px;
+  margin-left: 85px;
 }

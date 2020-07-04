@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Card, Image, Form } from 'react-bootstrap'
 import company_logo_ex from '../images/company_logo_ex.jpg'
+import { withRouter } from 'react-router-dom';
+
 class VerifyMail extends Component {
   constructor(props) {
     super(props)
@@ -9,6 +11,16 @@ class VerifyMail extends Component {
       Comp_name: 'Company',
       Imgsrc: company_logo_ex,
     }
+  }
+
+  checkCode=(x) => {
+    x.preventDefault();
+    // if(check correct code ? true){}
+    this.props.history.push('/login');
+    // update database confirm code  <--------- 
+
+    // else{}
+    // alert('Invalid code') <--- if qury wrong
   }
 
   render() {
@@ -45,7 +57,7 @@ class VerifyMail extends Component {
                   ></Form.Control>
                 </Form.Group>
               </Form>
-              <button className="verify-btn block " type="submit">
+              <button onClick={this.checkCode} className="verify-btn block " type="submit">
                 Verify
               </button>
             </Card>
@@ -56,4 +68,4 @@ class VerifyMail extends Component {
   }
 }
 
-export default VerifyMail
+export default withRouter(VerifyMail);
