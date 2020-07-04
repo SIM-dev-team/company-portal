@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react';
 import '../css/CompanyLogin.css';
 import { withRouter } from 'react-router-dom';

@@ -15,6 +15,7 @@ div {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  background-image: url('../images/bg_4.jpg');
 }
 
 .form-wrapper {

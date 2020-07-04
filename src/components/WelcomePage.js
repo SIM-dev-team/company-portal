@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import '../css/mycustom.css'
 import logo from '../images/ucsc_logo.jpeg'
 import { withRouter } from 'react-router-dom'
@@ -56,7 +55,14 @@ class WelcomePage extends Component {
           </div>
         </div>
       </div>
-    )
+      <div className="row ">
+        <button onClick={this.gologin} type="button" className="login_btn">
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+    );
   }
 }
 export default withRouter(WelcomePage)
