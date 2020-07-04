@@ -13,16 +13,17 @@
   float: right;
   margin-top: 1px;
   margin-left: 3px;
+  margin-right: 1em;
 }
-.container-fluid {
+/* .container-fluid {
   margin-top: 1em;
-}
-.backbtn{
+} */
+.backbtn {
   justify-content: flex-start;
-  color:#ffffff;
+  color: #ffffff;
   border-radius: 0.8em;
   width: 5em;
-  height:2em;
+  height: 2em;
   margin-left: 1em;
   border: none;
   background-color: #0984e3;
@@ -35,16 +36,16 @@
   height: 400px;
 }
 .login_btn {
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 1em 3em;
   width: 40em;
-  margin-left: 26em;
+  margin-left: 40em;
   text-align: center;
 }
 .logout-btn {
   width: 5em;
   margin-left: 50em;
-  color: #fff;
+  color: #09a9e8;
 }
 .edit-btn {
   background-color: #09a9e8;
@@ -111,6 +112,7 @@
   max-width: 200px;
   max-height: 200px;
   vertical-align: bottom;
+  margin-top: 5em;
 }
 .verifyMail_header {
   text-align: start;

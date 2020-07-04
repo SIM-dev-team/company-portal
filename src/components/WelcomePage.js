@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 
 import '../css/mycustom.css'
-import { Image } from 'react-bootstrap'
 import logo from '../images/ucsc_logo.jpeg'
 import { withRouter } from 'react-router-dom'
-import pdc_logo from '../images/pdc_logo.jpeg'
 
 class WelcomePage extends Component {
   gologin = (x) => {
@@ -15,7 +13,7 @@ class WelcomePage extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid ">
+        <div className="container-fluid mt-4">
           <div className="row ml-1">
             <div className=" col-lg-6 jumbotron ">
               <p>
@@ -43,7 +41,7 @@ class WelcomePage extends Component {
                 quality and employability.
               </p>
             </div>
-            <div className="col-lg-6 ">
+            <div className="col-lg-6">
               <img className="ucsc_logo" src={logo} alt=""></img>
             </div>
           </div>
@@ -51,7 +49,7 @@ class WelcomePage extends Component {
             <button
               onClick={this.gologin}
               type="button"
-              className="btn btn-primary btn-lg"
+              className=" btn btn-primary btn-lg"
             >
               Login
             </button>
