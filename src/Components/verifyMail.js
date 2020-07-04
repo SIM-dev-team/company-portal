@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Image, Form } from 'react-bootstrap'
+import { Card,  Form } from 'react-bootstrap'
 import company_logo_ex from '../images/company_logo_ex.jpg'
 import { withRouter } from 'react-router-dom';
 

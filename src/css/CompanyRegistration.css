@@ -9,6 +9,7 @@ p, div {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    background-image: url('./bg_4.jpg');
   }
 
   .form-wrapper01 {
@@ -21,7 +22,7 @@ p, div {
     padding: 20px 40px;
     border-radius: 6px;
     box-shadow: 0px 8px 36px #222;
-    background-color: #5b5ebe;
+    background-color: #ccced1;
     margin-top: 50px;
     margin-bottom: 20px;
   }
