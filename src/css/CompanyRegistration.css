@@ -1,27 +1,14 @@
 p, div {
     font-family: Lato;
   }
-  
-  /* 
-    Colors:
-    https://coolors.co/22223b-4a4e69-eadae4-9a8c98-c9ada7 
-  */
-  /*
-  YANKEES BLUE: #22223B
-  INDEPENDENCE: #4A4E69
-  PLATINUM: #EADAE4
-  SPANISH GRAY: #9A8C98
-  SILVER PINK: #C9ADA7
-  */
-  
-  .wrapper {
-    /* height: 90vh; */
+
+  .wrapper01 {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a32323;
+    background-color: #ffffff;
   }
 
   .form-wrapper01 {
@@ -34,25 +21,24 @@ p, div {
     padding: 20px 40px;
     border-radius: 6px;
     box-shadow: 0px 8px 36px #222;
-    background-color: #ffffff;
-    margin-top: 950px;
+    background-color: #5b5ebe;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
   
-  .form-wrapper > h2 {
+  .form-wrapper01 > h2 {
     display: flex;
     justify-content: left;
     font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 0.25em;
-    color: #222;
+    color: rgb(0, 0, 0);
     margin-bottom: 30px;
   }
   
   form {
     width: 100%;
-    /* height: auto;  */
     display: flex;
     flex-wrap: wrap;
   }
@@ -63,9 +49,9 @@ p, div {
     padding-right: 0.5em;
   }
   
-  label {
+  .label {
     margin-bottom: 0.5em;
-    color: #444;
+    color:#000000;
     font-weight: lighter;
   }
   
@@ -102,7 +88,6 @@ p, div {
     padding: 	0.938em;
     border: none;
     border-radius: 4px;
-    /* background-color: #222f3b; */
     color: #fefefe;
     font: 1.2em sans-serif;
   }
@@ -129,7 +114,15 @@ p, div {
     flex-direction: column;
     margin-bottom: 15px;
     width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
   }
+  /* .fullName,.description, .regNo, .partners, .clients, .contact, .available,.website,.address,.date,.employee,.pm,.techlead,.confirm,
+  .email,
+  .password > label{
+    color: #e90f0f;
+  } */
   
  .form-row{
     width: 100%;

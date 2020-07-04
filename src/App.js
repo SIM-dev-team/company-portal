@@ -12,10 +12,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+          <NavBar />
+        {/* <Header /> */}
         <NotYetVerified />
         {/* <VerifyMail /> */}
-        {/* <NavBar /> */}
         {/* <Companyprofile /> */}
         {/* <CompanyLogin /> */}
         {/* <CompanyRegistration /> */}
