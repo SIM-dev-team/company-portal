@@ -116,6 +116,7 @@ class CompanyRegistration extends Component {
     event.preventDefault()
     this.setState({ formValid: validateForm(this.state.errors) })
     this.setState({ errorCount: countErrors(this.state.errors) })
+    this.props.history.push('/email-verify');
   }
 
   cancelCourse = (e) => {
@@ -127,8 +128,8 @@ class CompanyRegistration extends Component {
   render() {
     const { errors, formValid } = this.state
     return (
-      <div className="wrapper">
-        <div className="form-wrapper01">
+      <div className='wrapper01'>
+        <div className='form-wrapper01'>
           <h2>Register Your Company</h2>
           <form id="reg" onSubmit={this.handleSubmit}>
             <div className="fullName">
