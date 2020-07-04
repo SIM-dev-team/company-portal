@@ -156,7 +156,7 @@ class CompanyRegistration extends Component {
   render() {
     const {errors, formValid} = this.state;
     return (
-      <div className='wrapper'>
+      <div className='wrapper01'>
         <div className='form-wrapper01'>
           <h2>Register Your Company</h2>
           <form id="reg" onSubmit={this.handleSubmit}>

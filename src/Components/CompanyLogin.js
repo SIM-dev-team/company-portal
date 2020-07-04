@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import '../css/CompanyLogin.css';
 import { withRouter } from 'react-router-dom';
+import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 
 const validEmailRegex = RegExp(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i);
@@ -63,16 +67,18 @@ class Register extends Component {
     return (
       <div className='wrapper'>
         <div className='form-wrapper'>
-          <h2>L O G I N</h2>
+          <h2>Welcome</h2>
           <form onSubmit={this.handleSubmit} noValidate>
             <div className='email'>
               <label htmlFor="email">Email</label>
+              <FontAwesomeIcon className="userIcn" icon={faUser} />
               <input type='email' name='email' onChange={this.handleChange} noValidate />
               {errors.email.length > 0 && 
                 <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
+              <FontAwesomeIcon className="userIcn" icon={faLock} />
               <input type='password' name='password' onChange={this.handleChange} noValidate />
               {errors.password.length > 0 && 
                 <span className='error'>{errors.password}</span>}
@@ -84,7 +90,7 @@ class Register extends Component {
               <button onClick={this.goRegister} type="button" >Register</button>
           </form>
         </div>
-      </div>
+        </div>
     );
   }
 }
