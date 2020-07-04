@@ -1,25 +1,38 @@
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import NavBar from './Components/NavBar'
+import CompanyRegistration from './Components/CompanyRegistration'
+import CompanyLogin from './Components/CompanyLogin'
+import Companyprofile from './Components/CompanyProfile'
+import Header from './Components/Header'
+import VerifyMail from './Components/verifyMail'
+import NotYetVerified from './Components/notYetVerified'
+import WelcomePage from './Components/WelcomePage'
 
-import React from "react";
-//import logo from './logo.svg';
-import "./App.css";
-import { WelcomePage } from "./Components/WelcomePage";
-import Register from './Components/company_login';
-import NavBar from './Components/nav_bar';
-import CompanyRegistration from "./Components/CompanyRegistration";
+class App extends Component {
+  render() {
+    return (
+      <div>
 
+        <Header />
+        <WelcomePage />
 
-function App() {
-  return (
-    <div className="App">
+        {/* <NavBar /> */}
+       
+        {/* <Header /> */}
+       
+       
+        {/* <Companyprofile /> */}
+        {/* <CompanyLogin /> */}
 
-      {/* <WelcomePage></WelcomePage> */}
-      
-      <NavBar/>
-      <CompanyRegistration/>
-      {/* <Register/> */}
-
-    </div>
-  );
+        {/* <CompanyRegistration /> */}
+       
+        {/* <NotYetVerified /> */}
+        {/* <VerifyMail /> */}
+        {/* <Companyprofile /> */}
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
