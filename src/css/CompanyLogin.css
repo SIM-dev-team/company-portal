@@ -77,8 +77,6 @@ input::placeholder {
   cursor: pointer;
   padding: 0.538em;
   border: none;
-  /* border-radius: 2px; */
-  /* border-style: solid; */
   background-color: #007bff;
   color: #fefefe;
 }
@@ -87,8 +85,6 @@ input::placeholder {
   cursor: pointer;
   padding: 0.538em;
   border: none;
-  /* border-radius: 2px; */
-  /* border-style: solid; */
   background-color: #007bff;
   color: #fefefe;
 }

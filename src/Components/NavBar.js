@@ -20,7 +20,7 @@ class NavBar extends Component{
                 <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#1B1464'}}>
                     <div className="logo01">
                         <img className="ucsc_logo01" src={pdclogo} alt=""></img>
-                    <span><Link to={'/'} className="navbar-brand" style={{color:'#dcdde1'}}>Professional Development Center of University of Colombo School of
+                    <span><Link to={'/'} className="navtext" style={{color:'#dcdde1'}}>Professional Development Center of University of Colombo School of
                                 Computing</Link></span>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSup"></div>
