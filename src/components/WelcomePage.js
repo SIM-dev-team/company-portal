@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import '../css/mycustom.css'
+import { Image } from 'react-bootstrap'
 import logo from '../images/ucsc_logo.jpeg'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
+import pdc_logo from '../images/pdc_logo.jpeg'
 
-class  WelcomePage extends Component {
-
+class WelcomePage extends Component {
   gologin = (x) => {
-    x.preventDefault();
-    this.props.history.push('/login');
-    
+    x.preventDefault()
+    this.props.history.push('/login')
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <div>
     <div className="container-fluid">
       <div className="row">
@@ -58,4 +58,4 @@ class  WelcomePage extends Component {
     );
   }
 }
-export default withRouter(WelcomePage);
+export default withRouter(WelcomePage)

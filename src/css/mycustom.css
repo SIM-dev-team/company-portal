@@ -4,9 +4,15 @@
   display: inline-flex;
   justify-content: flex-start;
   padding: 1em;
-  margin-bottom: 2em;
   background-color: rgb(24, 16, 102);
   color: #fff;
+}
+.header_image {
+  width: 2em;
+  height: 2em;
+  float: right;
+  margin-top: 1px;
+  margin-left: 3px;
 }
 .container-fluid {
   margin-top: 1em;
@@ -23,6 +29,7 @@
 }
 
 .ucsc_logo {
+  position: relative;
   border: none;
   width: 400px;
   height: 400px;
@@ -55,11 +62,14 @@
 .login_btn {
   margin-top: 5em;
   padding: 1em 3em;
-  margin-left: 26em;
   width: 40em;
-  border: none;
+  margin-left: 26em;
   text-align: center;
-  background-color: #0984e3;
+}
+.logout-btn {
+  width: 5em;
+  margin-left: 50em;
+  color: #fff;
 }
 .edit-btn {
   background-color: #09a9e8;
@@ -142,6 +152,7 @@
 .jumbotron.text-center {
   height: fit-content;
   max-width: 80em;
+  margin-top: 3em;
 }
 .verify-btn {
   background-color: rgb(17, 9, 92);
