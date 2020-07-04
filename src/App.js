@@ -15,7 +15,7 @@ class App extends Component {
       <div>
 
         <Header />
-        {/* <WelcomePage /> */}
+        <WelcomePage />
 
         {/* <NavBar /> */}
        
@@ -29,7 +29,7 @@ class App extends Component {
        
         {/* <NotYetVerified /> */}
         {/* <VerifyMail /> */}
-        <Companyprofile />
+        {/* <Companyprofile /> */}
       </div>
     )
   }

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 
 import '../css/mycustom.css'
+import { Image } from 'react-bootstrap'
 import logo from '../images/ucsc_logo.jpeg'
 import { withRouter } from 'react-router-dom'
+import pdc_logo from '../images/pdc_logo.jpeg'
 
 class WelcomePage extends Component {
   gologin = (x) => {
