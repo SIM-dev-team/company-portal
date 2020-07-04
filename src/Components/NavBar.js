@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from '../images/ucsc_logo.jpeg'
+import pdclogo from '../images/pdc_logo.jpeg'
 import CompanyRegistration from './CompanyRegistration';
 import CompanyLogin from './CompanyLogin';
 import WelcomePage from './WelcomePage';
@@ -19,7 +19,7 @@ class NavBar extends Component{
             {/* <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"> */}
                 <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#1B1464'}}>
                     <div className="logo01">
-                        <img className="ucsc_logo01" src={logo} alt=""></img>
+                        <img className="ucsc_logo01" src={pdclogo} alt=""></img>
                     <span><Link to={'/'} className="navbar-brand" style={{color:'#dcdde1'}}>Professional Development Center of University of Colombo School of
                                 Computing</Link></span>
                     </div>

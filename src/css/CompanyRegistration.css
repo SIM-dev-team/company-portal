@@ -9,7 +9,7 @@ p, div {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    background-image: url('./bg_4.jpg');
+    background-image: url('../images/bg_4.jpg');
   }
 
   .form-wrapper01 {
