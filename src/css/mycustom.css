@@ -19,6 +19,7 @@
 }
 
 .ucsc_logo {
+  position: relative;
   border: none;
   width: 400px;
   height: 400px;
@@ -29,6 +30,11 @@
   width: 40em;
   margin-left: 26em;
   text-align: center;
+}
+.logout-btn {
+  width: 5em;
+  margin-left: 50em;
+  color: #fff;
 }
 .edit-btn {
   background-color: #09a9e8;

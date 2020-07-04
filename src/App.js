@@ -14,14 +14,14 @@ class App extends Component {
     return (
       <div>
         <Header />
-        {/* <WelcomePage /> */}
+        <WelcomePage />
 
         {/* <NavBar /> */}
         {/* <CompanyRegistration /> */}
         {/* <CompanyLogin /> */}
         {/* <NotYetVerified /> */}
         {/* <VerifyMail /> */}
-        <Companyprofile />
+        {/* <Companyprofile /> */}
       </div>
     )
   }
