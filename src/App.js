@@ -5,8 +5,16 @@ class App extends Component {
   render() {
     return (
       <div>
-          <NavBar />
-
+        {/* <Header /> */}
+        {/* <WelcomePage /> */}
+        <NavBar />
+        {/* <Header /> */}
+        {/* <Companyprofile /> */}
+        {/* <CompanyLogin /> */}
+        {/* <CompanyRegistration /> */}
+        {/* <NotYetVerified /> */}
+        {/* <VerifyMail /> */}
+        {/* <Companyprofile /> */}
       </div>
     )
   }
