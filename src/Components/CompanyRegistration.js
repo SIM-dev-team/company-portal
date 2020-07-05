@@ -206,7 +206,9 @@ class CompanyRegistration extends Component {
               <label htmlFor="clients">Clients(Optional)</label>
               <input type="text" name="partners" onChange={this.handleChange} />
             </div>
-            <div className="email">
+
+            <div className ="form-row">
+            <div className='email col-6'>
               <label htmlFor="email">Email</label>
               <input
                 required
@@ -218,7 +220,9 @@ class CompanyRegistration extends Component {
                 <span className="error">{errors.email}</span>
               )}
             </div>
-            <div className="contact">
+
+            <div className='contact col-6'>
+
               <label htmlFor="contact">Contact</label>
               <input
                 type="telephone"
@@ -229,7 +233,7 @@ class CompanyRegistration extends Component {
                 <span className="error">{errors.contact}</span>
               )}
             </div>
-
+            </div>
             <div className="form-row">
               <div className="employee form-group col-4">
                 <label htmlFor="employee">Number of Employees</label>
@@ -302,7 +306,9 @@ class CompanyRegistration extends Component {
               )}
             </div>
 
-            <div className="password">
+            <div className="form-row">
+            <div className='password form-group col-6'>
+
               <label htmlFor="password">Password</label>
               <input
                 required
@@ -314,7 +320,9 @@ class CompanyRegistration extends Component {
                 <span className="error">{errors.password}</span>
               )}
             </div>
-            <div className="confirm">
+
+            <div className='confirm form-group col-6'>
+
               <label htmlFor="confirm">Confirm Password</label>
               <input
                 required
@@ -326,26 +334,20 @@ class CompanyRegistration extends Component {
                 <span className="error">{errors.confirm}</span>
               )}
             </div>
-            <div className="bttn row">
-              <div className="cancel col-6">
-                <button
-                  className="cancelbttn btn btn-danger"
-                  onClick={this.cancelCourse}
-                >
-                  Cancel
-                </button>
-              </div>
-              <div className="submit col-6">
-                <button type="submit" className="registerbttn btn btn-primary">
-                  Submit
-                </button>
-              </div>
-            </div>
 
-            <p className="form-status">
-              <br />
-              Form is {formValid ? 'valid ✅' : 'invalid ❌'}
-            </p>
+            </div>
+            {/* <div className='info'>
+              <small>Password must be eight characters in length.</small>
+            </div> */}
+            <div className="bttn form-row">
+            <div className="cancel form-group col-4">
+            <button className="cancelbttn btn btn-danger" onClick={this.cancelCourse}>Cancel</button>
+            </div>
+            <div className='submit form-group col-4'>
+              <button type="submit" className="registerbttn btn btn-primary" >Submit</button>
+            </div>
+            </div> 
+
           </form>
         </div>
       </div>
