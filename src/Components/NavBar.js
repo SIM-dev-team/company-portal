@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import pdclogo from '../images/pdc_logo.jpeg'
-import CompanyRegistration from './CompanyRegistration';
-import CompanyLogin from './CompanyLogin';
-import WelcomePage from './WelcomePage';
-import Companyprofile from './CompanyProfile';
-import CompnayNotification from './CompanyNotification';
-import NewAdFrom from './NewAdFrom';
-import VerifyMail from './verifyMail';
+import CompanyRegistration from './CompanyRegistration'
+import CompanyLogin from './CompanyLogin'
+import WelcomePage from './WelcomePage'
+import Companyprofile from './CompanyProfile'
+import CompnayNotification from './CompanyNotification'
+import NewAdFrom from './NewAdFrom'
+import VerifyMail from './verifyMail'
 import NotYetVerified from './notYetVerified'
 import ForgotPassword from './ForgotPassword'
 
@@ -52,5 +51,4 @@ class NavBar extends Component{
         );
     }
 }
-export default NavBar;
-
+export default NavBar
