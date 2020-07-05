@@ -10,6 +10,7 @@ import CompnayNotification from './CompanyNotification';
 import NewAdFrom from './NewAdFrom';
 import VerifyMail from './verifyMail';
 import NotYetVerified from './notYetVerified'
+import ForgotPassword from './ForgotPassword'
 
 
 class NavBar extends Component{
@@ -45,6 +46,7 @@ class NavBar extends Component{
                     <Route exact path = '/newadd' component = {NewAdFrom}/>
                     <Route exact path = '/email-verify' component = {VerifyMail}/>
                     <Route exact path = '/email-notyet-verified' component = {NotYetVerified}/>
+                    <Route exact path = '/forgot-password' component = {ForgotPassword}/>
                 </Switch>
         </Router>
         );
