@@ -44,7 +44,7 @@ class WelcomePage extends Component {
               <img className="ucsc_logo" src={logo} alt=""></img>
             </div>
           </div>
-          <div className="row login_btn">
+          {/* <div className="row login_btn">
             <button
               onClick={this.gologin}
               type="button"
@@ -52,17 +52,15 @@ class WelcomePage extends Component {
             >
               Login
             </button>
-          </div>
+          </div> */}
+        </div>
+        <div className="row ">
+          <button onClick={this.gologin} type="button" className="login_btn">
+            Login
+          </button>
         </div>
       </div>
-      <div className="row ">
-        <button onClick={this.gologin} type="button" className="login_btn">
-          Login
-        </button>
-      </div>
-    </div>
-  </div>
-    );
+    )
   }
 }
 export default withRouter(WelcomePage)
