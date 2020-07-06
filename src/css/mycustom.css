@@ -35,6 +35,11 @@
   width: 400px;
   height: 400px;
 }
+.navtext{
+  margin-left: 10px;
+  padding-top: 20px;
+  font-size:25px;
+}
 
 /* ///////////////// */
 .ucsc_logo01 {
@@ -64,8 +69,9 @@
   margin-top: 2em;
   padding: 1em 3em;
   width: 40em;
-  height: 3em;
-  margin-left: 17em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
   text-align: center;
   color: #fff;
   background-color: #308af1;

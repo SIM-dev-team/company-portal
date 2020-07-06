@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/CompanyLogin.css';
-import { withRouter } from 'react-router-dom';
+import { withRouter,Link } from 'react-router-dom';
 
 
 
@@ -90,7 +90,7 @@ class Register extends Component {
                 <span className='error'>{errors.password}</span>}
             </div>
             <div className="ResetPassword">
-              <a href="# " className="ResetPassword">Forget passowrd</a><br/>
+              <Link to={`/forgot-password`} className="ResetPassword">Forget passowrd</Link><br/>
             </div>
               <button className="btn1" type="submit"  disabled={!this.state.email || !this.state.password} >Login</button>
                 <p className="or">----------------------OR----------------------</p>

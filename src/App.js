@@ -1,20 +1,15 @@
 import React, { Component } from 'react'
 import NavBar from './Components/NavBar'
+// import ForgotPassword from './Components/ForgotPassword'
+import CompanyLogin from './Components/CompanyLogin'
 
 class App extends Component {
   render() {
     return (
       <div>
-        {/* <Header /> */}
-        {/* <WelcomePage /> */}
-        <NavBar />
-        {/* <Header /> */}
-        {/* <Companyprofile /> */}
-        {/* <CompanyLogin /> */}
-        {/* <CompanyRegistration /> */}
-        {/* <NotYetVerified /> */}
-        {/* <VerifyMail /> */}
-        {/* <Companyprofile /> */}
+          <NavBar />
+          {/* <CompanyLogin/> */}
+          {/* <ForgotPassword/> */}
       </div>
     )
   }
