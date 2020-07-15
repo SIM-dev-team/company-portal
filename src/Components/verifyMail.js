@@ -16,11 +16,11 @@ class VerifyMail extends Component {
   checkCode=(x) => {
     x.preventDefault();
     // if(check correct code ? true){}
-    this.props.history.push('/login');
+    // this.props.history.push('/login');
     // update database confirm code  <--------- 
 
     // else{}
-    // alert('Invalid code') <--- if qury wrong
+    alert('Invalid code');
   }
 
   render() {
