@@ -13,16 +13,17 @@
   float: right;
   margin-top: 1px;
   margin-left: 3px;
+  margin-right: 1em;
 }
-.container-fluid {
+/* .container-fluid {
   margin-top: 1em;
-}
-.backbtn{
+} */
+.backbtn {
   justify-content: flex-start;
-  color:#ffffff;
+  color: #ffffff;
   border-radius: 0.8em;
   width: 5em;
-  height:2em;
+  height: 2em;
   margin-left: 1em;
   border: none;
   background-color: #0984e3;
@@ -34,17 +35,54 @@
   width: 400px;
   height: 400px;
 }
+.navtext{
+  margin-left: 10px;
+  padding-top: 20px;
+  font-size:25px;
+}
+
+/* ///////////////// */
+.ucsc_logo01 {
+  justify-self: start;
+  justify-content: start;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+/* .navbar{
+  background-color:rgba(53, 56, 149, 0.2)
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+  }
+}
+@media only screen and (max-width:768px){
+  .navbar{
+    background-color:#1C2331
+  }
+} */
+
+/* ///////////////////// */
+
 .login_btn {
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 1em 3em;
   width: 40em;
-  margin-left: 26em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
   text-align: center;
+  color: #fff;
+  background-color: #308af1;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 20px;
 }
 .logout-btn {
   width: 5em;
   margin-left: 50em;
-  color: #fff;
+  color: #09a9e8;
 }
 .edit-btn {
   background-color: #09a9e8;
@@ -111,6 +149,7 @@
   max-width: 200px;
   max-height: 200px;
   vertical-align: bottom;
+  margin-top: 5em;
 }
 .verifyMail_header {
   text-align: start;

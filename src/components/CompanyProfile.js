@@ -19,41 +19,42 @@ class Companyprofile extends Component {
   }
 
   render() {
-
     return (
-      <div className="container-fluid">
+      <div className="container-fluid mt-4">
         <div className="row">
-            <button className="backbtn" onClick={this.props.history.goBack}>Back</button>
-          <div className="col-lg-3">
+          <button className="backbtn" onClick={this.props.history.goBack}>
+            Back
+          </button>
+          <div className="col-lg-2">
             <Image
-              className="company_logo"
+              className="company_logo "
               src={company_ex}
               roundedCircle
               alt="Avatar"
             ></Image>
           </div>
-          <div className="col-lg-8 mt-xl-3  ">
+          <div className="col-lg-8 mt-xl-2 ">
             <div className="company_name_align">
               <h4>Software Company Name</h4>
             </div>
-            <div className="jumbotron">
-            <div className="container">
-          <EdiText
-              type='textarea'
-              inputProps={{
-                className: 'textarea',
-                placeholder: 'Type your content here',
-                style: {
-                  outline: 'none',
-                  minWidth: '80%'
-                },
-                rows: 5
-                }}
-              value="How do you define real? If you're talking about what you can feel, what you can smell,
+            <div className="jumbotron mr-4">
+              <div className="container">
+                <EdiText
+                  type="textarea"
+                  inputProps={{
+                    className: 'textarea',
+                    placeholder: 'Type your content here',
+                    style: {
+                      outline: 'none',
+                      minWidth: '80%',
+                    },
+                    rows: 5,
+                  }}
+                  value="How do you define real? If you're talking about what you can feel, what you can smell,
               what you can taste and see, then real is simply electrical signals interpreted by your brain"
-              onSave={this.onSave}
-            />
-        </div>
+                  onSave={this.onSave}
+                />
+              </div>
               <a href="www.softwarecompany.com" className="link_align">
                 www.softwarecompany.com
               </a>
